@@ -154,7 +154,6 @@ body {
 }
 .text-10 {
     font-weight: 400;
-    font-style: Regular;
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0;
@@ -180,12 +179,16 @@ body {
     color: #263238;
 }
 .text-13 {
-    font-weight: 400;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+.text-16 {
+    font-weight: 100;      /* Light — тонкий */
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0;
-    padding-top: 24px;
     color: #263238;
+    margin-top: 24px;
 }
 .button {
     background-color: #A53436;  /* цвет фона */
