@@ -112,7 +112,7 @@ body {
 .text-6 li {
     font-weight: 600;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 3;
     letter-spacing: 0;
     color: #263238;
 
@@ -183,7 +183,7 @@ body {
     padding-left: 24px;
 }
 .text-16 {
-    font-weight: 100;      /* Light — тонкий */
+    font-weight: 400;
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0;
@@ -191,44 +191,39 @@ body {
     margin-top: 24px;
 }
 .button {
-    background-color: #A53436;  /* цвет фона */
-    color: white;                /* цвет текста */
+    background-color: #A53436;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    padding: 12px 24px;          /* отступы внутри кнопки */
-    border: none;                /* убираем стандартную рамку */
-    border-radius: 30px;         /* закругление углов */
-    cursor: pointer;             /* курсор-рука при наведении */
-    transition: all 0.2s;        /* плавность при наведении */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
-
-/* Эффект при наведении */
 .button:hover {
-    background-color: #7a2628;   /* темнее при наведении */
-    transform: scale(1.02);      /* чуть увеличивается */
+    background-color: #7a2628;
+    transform: scale(1.02);
 }
 .button-2 {
-    background-color: #A53436;  /* цвет фона */
-    color: white;                /* цвет текста */
+    background-color: #A53436;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    padding: 12px 24px;          /* отступы внутри кнопки */
-    border: none;                /* убираем стандартную рамку */
-    border-radius: 30px;         /* закругление углов */
-    cursor: pointer;             /* курсор-рука при наведении */
-    transition: all 0.2s;        /* плавность при наведении */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
-
-/* Эффект при наведении */
 .button-2:hover {
-    background-color: #7a2628;   /* темнее при наведении */
-    transform: scale(1.02);      /* чуть увеличивается */
+    background-color: #7a2628;
+    transform: scale(1.02);
 }
 .gom {
     padding-top: 48px;
-
 }
 .gom-1 {
     font-weight: 600;
