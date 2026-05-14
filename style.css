@@ -4,9 +4,13 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 body {
-    padding: 0 10%;
+    padding: 0 10% 5% 10%;
+
 }
 
 .block-1 {
@@ -31,7 +35,7 @@ body {
 .text-2 {
     font-weight: 600;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 20px;
     letter-spacing: 0;
     color: #263238;
 }
@@ -50,7 +54,6 @@ body {
 }
 .block-4 {
     padding-top: 48px;
-    padding-left: 24px;
     display: flex;
     gap: 63px;
     align-items: center;
@@ -68,6 +71,7 @@ body {
 .stat-item {
     display: flex;
     align-items: center;
+    gap: 64px;
 
 }
 .number {
@@ -84,7 +88,6 @@ body {
     line-height: 100%;
     letter-spacing: 0;
     color: #333;
-    margin-left: 64px;
 }
 .block-5 {
     padding-top: 140px;
@@ -109,10 +112,10 @@ body {
     flex-direction: column;
     gap: 16px;
 }
-.text-6 li {
+.text-6 li h4 {
     font-weight: 600;
     font-size: 16px;
-    line-height: 3;
+    line-height: 1.5;
     letter-spacing: 0;
     color: #263238;
 
@@ -121,9 +124,9 @@ body {
     padding-top: 48px;
 }
 .text-7 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 1.5;
     letter-spacing: 0;
     color: #263238;
 }
@@ -142,7 +145,7 @@ body {
     padding-top: 48px;
     padding-left: 24px;
 }
-.text-9 {
+.text-9 li h4 {
     font-weight: 600;
     font-size: 16px;
     line-height: 3;
@@ -180,7 +183,6 @@ body {
 }
 .text-13 {
     padding-top: 24px;
-    padding-left: 24px;
 }
 .text-16 {
     font-weight: 400;
@@ -285,4 +287,96 @@ body {
 }
 .kuchahub {
     margin-top: 48px;
+}
+/* ===== АДАПТИВ ===== */
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+    body {
+        padding: 0 5%;
+    }
+
+    .block-2, .block-4, .block-6, .gomu {
+        flex-direction: column;  /* элементы друг под другом */
+    }
+
+    .block-2-image, .block-4-image, .block-6-image, .kuchahub {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .stat-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .t-text {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .block-4 {
+        padding-left: 0;
+    }
+
+    .block-6 {
+        padding-left: 0;
+        gap: 30px;
+    }
+}
+
+/* Телефоны (до 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 0 16px;
+    }
+
+    .text-1 {
+        font-size: 28px;
+    }
+
+    .text-3, .text-5, .text-8, .text-11 {
+        font-size: 24px;
+    }
+
+    .text-12 {
+        font-size: 20px;
+    }
+
+    .number {
+        min-width: 80px;
+        font-size: 26px;
+    }
+
+    .block-1, .block-3, .block-5, .block-8, .block-11 {
+        padding-top: 50px;
+    }
+
+    .gom-1, .gom-4 {
+        font-size: 18px;
+    }
+
+    .button, .button-2 {
+        width: 100%;
+    }
+
+    .gomu {
+        gap: 30px;
+    }
+}
+
+/* Очень маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+    .text-1 {
+        font-size: 24px;
+    }
+
+    .text-3, .text-5, .text-8, .text-11 {
+        font-size: 20px;
+    }
+
+    .number {
+        font-size: 22px;
+        min-width: 70px;
+    }
 }
